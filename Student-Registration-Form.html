@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	
+<style type="text/css">
+		body{
+			background: white ;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.content{
+			background: #63C5DA;
+			width: 80%;
+			padding: 30px;
+			margin: 100px auto;
+			font-family: Rockwell;
+		}
+		p{
+			font-family: Georgia;
+			font-size: 30px; 
+			color: black;
+			text-align: center;
+		}
+		i{
+			font-family: Georgia;
+			color: black;
+		}
+		
+		* {
+			box-sizing: border-box;
+			font-family: Rockwell;
+		} 
+		.header{
+			padding: 20px;
+			color: white;
+			background-color: #4579fb;
+		}
+		.menu{
+			width: 100%;
+			float: left;
+			padding: 15px;
+		}
+		.main{
+			width: 100%;
+			float: left;
+			padding: 15px;
+		}
+		.menu ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu ul li{
+			padding: 8px;
+			margin-bottom: 5px;
+			background-color: #414bcc;
+			text-align: center;
+		}
+		.menu a{
+			text-decoration: none;
+			color: #F5F5DC;
+		}
+  
+   
+/* For Desktop*/
+
+   
+/* change screen to violet*/
+@media only screen and (max-width: 3840px){
+  body {
+   background-image: url('https://wallpapercave.com/wp/wp8390008.png');
+  }
+}
+
+/* change screen to blue*/
+@media only screen and (min-width: 2160px){
+  body {
+   background-image: url('https://cdn.pixabay.com/photo/2018/05/28/12/09/headphones-3435880_1280.jpg');
+   color: black;
+   
+  }
+}
+
+/* For Desktop*/
+@media only screen and (min-width: 768px){
+  .menu{
+   width: 16.66%
+  }
+  .main{
+   width: 83.34%;
+  }
+  
+  
+
+}
+  
+</style>
+
+
+</head>
+
+<body>
+
+    <div class="content"> 
+      <form> 
+        <hr />
+          <div class="form"> 
+
+
+<p><b>Enrollment for School Year 2022 - 2023</b></p>
+Good day! Enrollment for the School Year 2022-2023 is now open! Don't pass up 
+this chance to educate your children. To record your information, simply fill 
+out this form and click the submit button. This is an online registration form 
+for those who wish to enroll through this website. Stay up to date on our school's 
+website to ensure your children are enrolled.
+<br><br>
+<b>NOTE:</b> Please keep in mind that all information gathered from this form will be used solely 
+for educational purposes. Take comfort in knowing that the student's personal information will 
+not be made public or will be kept confidential.
+<br><br>
+If you have any concerns about this registration, feel free to message us.
+<br><br>
+Thank you!
+<center><b><h1>Student Registration Information</h1></b></center>
+<b><h2>High School Department</h2></b>
+	<form>
+		 Student's First Name: <input type = "text" placeholder = "First Name" name = firstname/><br><br>
+		 Student's Middle Name: <input type = "text" placeholder = "Middle Name" name = middlename/><br><br>
+		 Student's Last Name: <input type = "text" placeholder = "Last Name" name = lastname/><br><br>
+		 Father's Name: <input type = "text" placeholder = "Father's Name" name = fathersname/><br><br>
+		 Mother's Maiden Name: <input type = "text" placeholder = "Mother's Maiden Name" name = mothersmaidenname/><br><br>
+		 Student's Username: <input type = "text" placeholder = "Enter Username" name = username/><br><br>
+		 Student's Date of Birth: <input type = "date" id = "send" oninput = "result.value = send.value"/>
+						<input type = "text" placeholder = "Date of Birth" id = "result"/>
+						<br><br>
+		 Student's Age: <input type = "text" placeholder = "Age" name = age/><br><br>
+		 Parent or Guardian's Email Address: <input type = "mail" placeholder = "Email Address" name = email/><br><br>
+		 Student's Gender: <input type = "radio" name = "Gender">Male
+				 <input type = "radio" name = "Gender">Female
+				 <input type = "radio" name = "Gender">Other
+				 <br><br>
+		 Student's Status: <input type = "radio" name = "Status">Old Student
+						   <input type = "radio" name = "Status">New Student
+						   <br><br>
+		 Parent or Guardian's Contact No: 
+		              </td> 
+		                  <td> 
+		                <select>
+		            <option>+63</option> 
+		            <option>+61</option>
+		            <option>+591</option>
+		            <option>+86</option>
+		            <option>+57</option>
+		            <option>+30</option>
+		           <option>+972</option>
+		            <option>+64</option>
+		            <option>+7</option>
+		            <option>+82</option>
+		            <option>+44</option>
+		               </select> 
+		   <input type="Phone" placeholder="93+" name=""/>
+		   <br><br>
+		 Current Address : <br>
+         <textarea cols="80" rows="6" placeholder="Current Address" value="address" required>  
+         </textarea>   
+		 <br><br>
+		 Mode of Payment: <br>
+		 <input type = "checkbox" value = "Cash">Plan A - Cash<br>
+		 <input type = "checkbox" value = "Semestral">Plan B - Semestral<br>
+		 <input type = "checkbox" value = "Quarterly">Plan C - Quarterly<br>
+		 <input type = "checkbox" value = "Monthly">Plan D - Monthly<br>
+		 <br>
+		 Registration Month: <input type = "month"/><br><br>
+		 Date and Time of Registration: <input type = "datetime-local" id = "send" oninput = "result.value = send.value"/>
+								  <input type = "text" placeholder = "Date and Time" id = "result"/>
+								  <br><br>
+		 Registration Week: <input type = "week"/><br><br>
+		 Password: <input type = "password" placeholder = "Enter Password" name = "pwd" /><br><br>
+		 <input type ="reset" value = "Reset"/> 
+		 <input type ="submit" value ="Submit"/>
+		 <br><br>
+	</form>
+
+<br>
+
+
+</body>
+</html>
